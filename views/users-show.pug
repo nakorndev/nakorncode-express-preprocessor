@@ -1,0 +1,11 @@
+extends layouts/default.pug
+
+block content
+  h1.title #{user.name}
+  .content
+    ul
+      li #[b ID:] #{user.id}
+      li #[b Age:] #{user.age}
+      li #[b Gender:&nbsp;]
+        span(style="text-transform: capitalize;") #{user.gender}
+      li #[b Salary:] #{Number(user.salary).toLocaleString()}
